@@ -92,39 +92,6 @@
 <div class="clear space20"></div><div id="get_khach_hang_id-2" class="khach-hang homebox"><h2 class="tit_box">Ý kiến khách hàng</h2>
 
 <div class="full customer" style="opacity: 1; display: block;">
-
-
-  <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 8040px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d(-3216px, 0px, 0px);">
-
-  <div class="owl-item" style="width: 402px;">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
-      <div class="img-status"><img src="https://che-sach.com/wp-content/uploads/2017/04/khach-nhat-ban-che-duy-thinh.jpg" class="attachment-thumb-cat size-thumb-cat wp-post-image" alt=""></div>
-    </div>   
-    <div class="col-lg-8 col-md-8 col-sm-8 +right">              
-      <div class=" full "><p>Mr Keitantakatan</p>
-      </div>
-      <div class=" full bold"><p>Tokyo – Japan</p>
-      </div>
-      <div class="short_content full text-justify">Đi rất nhiều vùng trà nhưng tôi đã dừng lại ở Suối Giàng với những búp trà mập mạp, hậu vị tốt nhất mà tôi thường thấy.</div>
-    </div>
-  </div>
-  </div>
-<div class="owl-item" style="width: 402px;"><div class="row">
-<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
-  <div class="img-status"><img src="https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal-333x250.jpg" class="attachment-thumb-cat size-thumb-cat wp-post-image" alt="" srcset="https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal-333x250.jpg 333w, https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal-400x300.jpg 400w, https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal-768x576.jpg 768w, https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal-600x450.jpg 600w, https://che-sach.com/wp-content/uploads/2016/12/k-hieu-royal.jpg 960w" sizes="(max-width: 333px) 100vw, 333px"></div>
-</div>   
-<div class="col-lg-8 col-md-8 col-sm-8 +right">              
-  <div class=" full "><p>Anh: <strong>Hiếu</strong></p>
-  </div>
-  <div class=" full bold"><p>Royal City – HN</p>
-  </div>
-  <div class="short_content full text-justify">Vợ tôi mới sinh cháu, muốn tìm chè vằng lợi sữa cho vợ.Nhưng do không có thời gian đun nấu nên tôi chọn sản phẩm cao chè vằng để tiện cho vợ sử dụng .Tôi có tìm trên mạng...</div>
-</div>
-</div></div>
-</div></div>
-
-
 <?php
 wp_reset_postdata();
 
@@ -139,7 +106,7 @@ wp_reset_postdata();
 
     
     //Pagination Parameters
-    'posts_per_page'         => 5,
+    'posts_per_page'         => 8,
     
     
     //Taxonomy Parameters
@@ -147,14 +114,15 @@ wp_reset_postdata();
         array(
           'taxonomy'         => 'starter_testimonial_cat',
           'field'            => 'slug',
-          'terms' => array('slogan')
+          'terms' => array('y-kien-khach-hang'),
+        
         ),
     ),
   );
 
 $query = new WP_Query( $args );
 
-echo '<div data-init="slick" data-owl-auto="true" data-owl-loop="true" data-owl-speed="10000" data-owl-gap="" data-owl-nav="true" data-owl-dots="true" data-owl-animate-in="" data-owl-animate-out="" data-owl-item="2" data-owl-item-xs="3" data-owl-item-sm="3" data-owl-item-md="3" data-owl-item-lg="4" data-owl-nav-left="&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;" data-owl-nav-right="&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;" data-owl-counter="true" data-target="2" class="ac-owlslider ac-owl-slider-section ac-owlslider--center">';
+echo '<div data-init="slick" data-owl-auto="true" data-owl-loop="true" data-owl-speed="10000" data-owl-gap="" data-owl-nav="true" data-owl-dots="true" data-owl-animate-in="" data-owl-animate-out="" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="3" data-owl-item-lg="1" data-owl-nav-left="&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;" data-owl-nav-right="&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;" data-owl-counter="true" data-target="2" class="ac-owlslider ac-owl-slider-section ac-owlslider--center">';
 
 if ( $query->have_posts() ) :
   while ( $query->have_posts() ) : $query->the_post(); ?>

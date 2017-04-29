@@ -77,7 +77,7 @@
                     </hgroup>
                   <?php endif; ?>
                   </div>
-                  <div class="destop col-sm-2 col-md-2 text-center slogan "><img class="img-max-full" src="<?php echo bloginfo('template_directory'); ?>/images/h-lache.png" alt="Nông sản đất Quảng &#8211; Đặc sản"></div>
+                  <div class="destop col-sm-2 col-md-2 text-center slogan "><!--img class="img-max-full" src="<?php echo bloginfo('template_directory'); ?>/images/h-lache.png" alt="Nông sản đất Quảng &#8211; Đặc sản"--></div>
                   <div class="col-sm-5 col-md-5 text-center info_header"><img src="<?php echo bloginfo('template_directory'); ?>/images/cod.png" alt="Nông sản đất Quảng &#8211; Đặc sản"></div>
                 </div>
                 <!-- /.row -->

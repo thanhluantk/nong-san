@@ -99,7 +99,7 @@ ul{list-style: none;}
     CUSTOMIZE
 \*------------------------------------*/
 .container{max-width: 1140px;   }
-body{font: 16px/22px UTM_Swiss_Condensed, 'Tahoma';   color: #231c12;     background: url(images/bg_body.png) repeat #fff;}
+body{font: 16px/22px UTM_Swiss_Condensed, 'Tahoma' !important;   color: #231c12;     background: url(images/bg_body.png) repeat #fff;}
 
 
 .top_bar{line-height: 36px;}
